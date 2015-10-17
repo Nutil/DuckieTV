@@ -12,11 +12,11 @@
   4. Constraints
 
 3. [Specific Requirements] (#specific-requirements)
-  1. External interface requirements
+  1. [External interface requirements] (#external-interface-requirements)
     1. User interfaces
     2. Hardware interfaces
     3. Communications interfaces
-  2. System Features
+  2. [System Features] (#system-features)
     1. System feature
       1. Introduction / Purpose of feature
       2. Stimulus / Response sequence
