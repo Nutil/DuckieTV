@@ -21,8 +21,7 @@
       1. Introduction / Purpose of feature
       2. Stimulus / Response sequence
       3. Associated functional requirements
-  3. Perfomance Requirements
-  4. Design Constraints
+  3. Design Constraints
 
 ## Introduction
 DuckieTV was originally developed as a private project so [SchizoDuckie](https://github.com/SchizoDuckie) could learn AngularJS. Nowadays this project is used to organize and catalogue all the TV shows that the user has watched and / or wants to watch in a calendar. It may also be used to download said TV Shows by searching for torrents on multiple external websites.
@@ -100,8 +99,6 @@ Because there is no server side data storage, the user's privacy is kept intact.
 
 #### Use Case Diagram
 ![Use Case](http://i.imgur.com/s6eBXHM.png)
-
-## Perfomance Requirements
 
 ## Design Constraints
 DuckieTV was developed in order to fit different screen dimensions. While it can technically run on a (high-end) Android phone, however, the use of a Tablet is advised when you want to run it on the Android platform because there are no small-screen optimisations.
