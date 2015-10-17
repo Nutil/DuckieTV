@@ -50,7 +50,7 @@ The target market is composed by TV-Show addicts and can be separated into two d
 - Users that just want to keep track of when their favorite TV shows are airing, regardless of network or country. It doesn't matter if a show airs on BBC2, or is a Netflix or Amazon or HBO exclusive, the user can put it on their personal TV calendar regardless of the user's home country. 
 - Users that prefer to see TV Shows at home without being locked out by regional copyright and release-schedule restrictions, or don't want to subscribe to different on-demand TV providers to see their favorite shows.
 
-- Previously there was no software that allowed users to organize their favorite shows and downloads in a calendar like DuckieTV does.
+Previously there was no software that allowed users to organize their favorite shows and downloads in a calendar like DuckieTV does.
 
 There are currently no constraints on using this program, except for countries where the program might be illegal because it uses torrents.
 
