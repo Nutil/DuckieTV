@@ -15,4 +15,4 @@
   2. Interpretation
 
 ## Introduction
-In this report we will address more specifically software architecture [model 4 + 1](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)
+In this report we will address more specifically software [model 4 + 1 architecture model](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model).
