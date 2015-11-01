@@ -2,7 +2,7 @@
 
 1. [Introduction] (#introduction)
 
-2. [4 + 1 Architecturel Model] (#4-+-1-architectura-model)
+2. [4 + 1 Architectural Model] (#4-+-1-architectural-model)
 
     1. [Logical View] (#logical-view)
         1. Package Diagram
@@ -20,7 +20,7 @@
 ## Introduction
 Every project should have a set of diagramas that make project understanding easier to other users. So, in this report we will talk about how DuckieTV is distributed in componenets, how they interact with each other, how they are distributed and what are the requirements to run this software.
 
-We will use the [model 4+1 architecture model](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model) as wide known architectural view model that is used for
+We will use the [4+1 architectural model](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model), a wide known architectural view model that is used for
 
 > Describing the architecture of software-intensive systems, based on the use of multiple concurrent views.
 
