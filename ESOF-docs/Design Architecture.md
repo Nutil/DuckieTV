@@ -2,7 +2,7 @@
 
 1. [Introduction] (#introduction)
 
-2. [4 + 1 Architectural Model] (#4-+-1-architectural-model)
+2. [4 + 1 Architectural Model] (4--1-architectural-model)
 
     1. [Logical View] (#logical-view)
         1. Package Diagram
