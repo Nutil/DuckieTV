@@ -47,10 +47,10 @@ A component diagram represenas a system module that encapsulates its contents. E
 ### Process View
 The Process view shows how the system communicates in run-time.
 #### UML Activity Diagram
-![Activity Diagram]()
+![Activity Diagram](http://imgur.com/9J4fDuT)
 
 ### Deployment View
 This view shows the system hardware and how software components are distributed among hardware components, represented as *nodes*. Each node contains *artifacts* representing the software.
 
 #### UML Deployment Diagram
-![Deployment Diagram]()
+![Deployment Diagram](http://imgur.com/pcZbBp0)
