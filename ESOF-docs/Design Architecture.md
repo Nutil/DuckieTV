@@ -53,4 +53,4 @@ The Process view shows how the system communicates in run-time.
 This view shows the system hardware and how software components are distributed among hardware components, represented as *nodes*. Each node contains *artifacts* representing the software.
 
 #### UML Deployment Diagram
-![Deployment Diagram](http://imgur.com/pcZbBp0)
+![Deployment Diagram](http://i.imgur.com/pcZbBp0.jpg)
