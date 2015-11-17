@@ -1,3 +1,14 @@
+# Software Tests
+1. [Degree of Testability] (#degree-of-testability)
+     1. [Controllability] (#controllability)
+     2. [Observability] (#observability)
+     3. [Isolateability] (#isolateability)
+     4. [Separation of Concerns] (#separation-of-concerns)
+     5. [Understandability] (#understandability)
+     6. [Heterogeneity] (#heterogeneity)
+2. [Test Statistics] (#statistics)
+3. [Bug Report] (#bug-report)
+
 1) Degree of Testability of the software program
 Topics: Discuss how 'testable' is the program. Discuss how to improve the testability of software components.
 
@@ -15,3 +26,12 @@ The testability of software components (modules, classes) is determined by facto
      Code coverage: is it any good? (see http://avandeursen.com/2013/11/19/test-coverage-not-for-managers/)
 
 3) [Opcional] Take a bug report, create test cases to reproduce it, and fix it, eventually using automated software fault diagnosis techniques. (grade >18)
+
+# Introduction
+
+With this report we have the goal of analyzing the software tests developed for [DuckieTV](https://schizoduckie.github.io/DuckieTV/) through the Validation and Verification ([V&V](https://en.wikipedia.org/wiki/Verification_and_validation) ).
+
+First of all we are going to discuss how "testable" is the program and how they oculd be improved in order 
+
+# Degree of Testability
+
