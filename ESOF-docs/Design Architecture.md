@@ -42,7 +42,7 @@ The Implementation view has the goal of showing software components and the depe
 #### UML Component Diagram
 A component diagram represenas a system module that encapsulates its contents. Each component can be a library, executable, database, etc. Components are organized in a provider and consumer relationship.
 
-![Component Diagram](http://i.imgur.com/ZPFajspl.jpg)
+![Component Diagram](http://i.imgur.com/eRYImIE.jpg)
 
 ### Process View
 The Process view shows how the system communicates in run-time.
