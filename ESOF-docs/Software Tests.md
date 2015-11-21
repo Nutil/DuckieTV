@@ -13,7 +13,6 @@
 Topics: Discuss how 'testable' is the program. Discuss how to improve the testability of software components.
 
 The testability of software components (modules, classes) is determined by factors such as:
-- Controllability: The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
 - Observability: The degree to which it is possible to observe (intermediate and final) test results.
 - Isolateability: The degree to which the component under test (CUT) can be tested in isolation.
 - Separation of concerns: The degree to which the component under test has a single, well defined responsibility.
@@ -31,7 +30,15 @@ The testability of software components (modules, classes) is determined by facto
 
 With this report we have the goal of analyzing the software tests developed for [DuckieTV](https://schizoduckie.github.io/DuckieTV/) through the Validation and Verification ([V&V](https://en.wikipedia.org/wiki/Verification_and_validation) ).
 
-In order to accomplish our goal we will explore how testable is the software, the controllability of the test components, the observability of them and the isolateability of each tested component. We will also discuss how each component is contained for a single and well defined responsability as well as the understandability of it (how well documented it is). The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel will also be discussed.
+In order to accomplish our goal we will explore how testable is the software, the controllability of the test components, the observability of them and the isolateability of each tested component. 
+
+We will also discuss how each component is contained for a single and well defined responsability as well as the understandability of it (how well documented it is). The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel will also be discussed.
+
+Last but not least there will be some statistics regarding the code coverage of the tests and a critical analyzis to it.
 
 # Degree of Testability
+Unfortunately DuckieTV is not well tested. Its tests haven't been updated for more than 9 months even with new features being released. It will be a hard task to discuss certain topics regarding this main topic, but we will do our best.
 
+## Controllability
+- Controllability: The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
+DuckieTV has two types of tests Karma and Protractor unit tests. Being developed in several modules it became easier to control the state of each component.
