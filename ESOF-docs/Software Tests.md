@@ -31,7 +31,7 @@ The testability of software components (modules, classes) is determined by facto
 
 With this report we have the goal of analyzing the software tests developed for [DuckieTV](https://schizoduckie.github.io/DuckieTV/) through the Validation and Verification ([V&V](https://en.wikipedia.org/wiki/Verification_and_validation) ).
 
-First of all we are going to discuss how "testable" is the program and how they oculd be improved in order 
+In order to accomplish our goal we will explore how testable is the software, the controllability of the test components, the observability of them and the isolateability of each tested component. We will also discuss how each component is contained for a single and well defined responsability as well as the understandability of it (how well documented it is). The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel will also be discussed.
 
 # Degree of Testability
 
