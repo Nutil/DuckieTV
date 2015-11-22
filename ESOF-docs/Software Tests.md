@@ -45,4 +45,4 @@ Unfortunately DuckieTV is not well tested. Its tests haven't been updated for mo
 DuckieTV has two types of tests Karma and Protractor unit tests. Being a software with a lot of dependencies it has not only the need to control the state of the components being tested but also the third part software that is being used by them.
 As said before, DuckieTV has very few tests which allowed CUTs (components under test) to be controlled easier. One of the methods to deal with the HTTP responses was by overriding the respond function as seen on the image below.
 
-[!HTTP Backend Override](http://i.imgur.com/277gDP3.png)
+![HTTP Backend Override](http://i.imgur.com/277gDP3.png)
