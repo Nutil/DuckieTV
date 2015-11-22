@@ -3,9 +3,19 @@
      1. [Controllability] (#controllability)
      2. [Observability] (#observability)
      3. [Isolateability] (#isolateability)
+     4. [Separation of Concerns] (#separation-of-concerns)
      5. [Understandability] (#understandability)
      6. [Heterogeneity] (#heterogeneity)
 2. [Test Statistics] (#statistics)
+3. [Bug Report] (#bug-report)
+
+1) Degree of Testability of the software program
+- Heterogeneity: The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
+
+2) Test Statistics
+     Number of tests (# tests unitários; # tests de sistema, # tests de desempenho, ...)
+     % coverage (given by tools like EclEmma)
+     Code coverage: is it any good? (see http://avandeursen.com/2013/11/19/test-coverage-not-for-managers/)
 
 ## Introduction
 
@@ -38,7 +48,7 @@ As said before DuckieTV uses [Karma](http://karma-runner.github.io/0.13/index.ht
 
 In this topic we will sadly be unable to discuss Karma and Protractor unit tests since we tried to run them, but ended up either with an error message regarding some malformed tests or with zero tests ran.
 
-Travis CI is used to make integration tests on pull requests made by the contributors. There are several jobs that are executed and each one must pass the tests in order to be considered a successfull build.
+Travis CI is used to automate testing of the code base every time the repository is updated, namely the 'angular' branch. A few jobs are executed prior to testing as a prerequisite, and both those and the actual testing must pass in order to be considered a successful build. Ultimately the integration testing relies on unit testing provided by Karma and, as mentioned before, we observed that no test were actually executed.
 
 ![Travis IC Build](http://i.imgur.com/IuPMFS3.png)
 
