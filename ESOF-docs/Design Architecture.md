@@ -54,3 +54,12 @@ This view shows the system hardware and how software components are distributed 
 
 #### UML Deployment Diagram
 ![Deployment Diagram](http://i.imgur.com/pcZbBp0.jpg)
+
+## Authors
+* João Silva ([up201305892@fe.up.pt](mailto:up201305892@fe.up.pt))
+* Luís Figueiredo ([up201304295@fe.up.pt](mailto:up201304295@fe.up.pt))
+* Pedro Teles ([up201305101@fe.up.pt](mailto:up201305101@fe.up.pt))
+* Tiago Figueiredo ([ei12069@fe.up.pt](mailto:ei12069@fe.up.pt))
+
+**Faculdade de Engenharia da Universidade do Porto - MIEIC**
+**2015-10-16**
