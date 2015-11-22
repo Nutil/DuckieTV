@@ -83,5 +83,7 @@ Through out the code there are several elements, such as self-explaining variabl
 ### Heterogeneity
 
 Despite of having a handfull of contributors it is necessary ensure that when merging pull request the programe remains fully functional.
+
 This problem can be overcome with 2 metods unit testing or through integration tests. DuckieTV uses Travis CI to automate this integration tests and ultimately ensure the correct function off the program with the new changes.
+
 We can concluded that the use of a repository GitHub open to various contributors result in a heterogeneity of test tools used.
