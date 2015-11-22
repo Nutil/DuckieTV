@@ -6,7 +6,7 @@
      4. [Separation of Concerns] (#separation-of-concerns)
      5. [Understandability] (#understandability)
      6. [Heterogeneity] (#heterogeneity)
-2. [Test Coverage] (#Test-Coverage)
+2. [Test Statistics] (#statistics)
 3. [Bug Report] (#bug-report)
 
 1) Degree of Testability of the software program
@@ -83,7 +83,7 @@ This problem can be overcome with 2 metods: unit testing or integration testing.
 We can conclude that the use of a repository GitHub open to various contributors results in a heterogeneity of test tools used.
 
 
-### Test Coverage
+### Statistics
 
 Because, as mentioned before, we were unable to run the tests, we do not have a means to tell exactly how much of DuckieTV is covered by the tests. However, our rough estimate lies between the 10% and 15% mark. This is an optimistic guess, it may very well even be lower than that, but never more than 15%. DuckieTV really lacks testing. In its current state, the vast majority of DuckieTV's functionalities are completely untested and any change to old code would require extended developer time to ensure proper functioning, because no tests would ensure the code works properly for the developer to save time.
 
