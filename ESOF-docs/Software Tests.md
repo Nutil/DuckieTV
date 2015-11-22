@@ -13,8 +13,6 @@
 Topics: Discuss how 'testable' is the program. Discuss how to improve the testability of software components.
 
 The testability of software components (modules, classes) is determined by factors such as:
-- Observability: The degree to which it is possible to observe (intermediate and final) test results.
-- Isolateability: The degree to which the component under test (CUT) can be tested in isolation.
 - Separation of concerns: The degree to which the component under test has a single, well defined responsibility.
 - Understandability: The degree to which the component under test is documented or self-explaining.
 - Heterogeneity: The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
@@ -43,6 +41,16 @@ Unfortunately DuckieTV is not well tested. Its tests haven't been updated for mo
 ## Controllability
 
 DuckieTV has two types of tests Karma and Protractor unit tests. Being a software with a lot of dependencies it has not only the need to control the state of the components being tested but also the third part software that is being used by them.
+
 As said before, DuckieTV has very few tests which allowed CUTs (components under test) to be controlled easier. One of the methods to deal with the HTTP responses was by overriding the respond function as seen on the image below.
 
 ![HTTP Backend Override](http://i.imgur.com/277gDP3.png)
+
+## Observability
+- Observability: The degree to which it is possible to observe (intermediate and final) test results.
+This topic will be very hard to discuss since the existing unit tests do not run. We have no chance to test either there was a possible observation
+
+### Isolateability
+- Isolateability: The degree to which the component under test (CUT) can be tested in isolation.
+Almost every component in this software is dependant on third part libraries which makes almost impossible to test them in a complete isolation. Moreover DuckieTV module is needed for every component test as you can state in the following picture.
+![DuckieTV Module](http://i.imgur.com/Z6JROgm.png)
