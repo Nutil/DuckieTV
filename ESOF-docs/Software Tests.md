@@ -29,7 +29,7 @@ Last but not least there will be some statistics regarding the code coverage of 
 
 ## Degree of Testability
 
-Unfortunately, DuckieTV is not well tested. Its tests haven't been updated for over 9 months, even with new features being released. It will be a hard task to discuss certain topics regarding this main topic due to the absence of updates regarding the subject.
+Unfortunately, DuckieTV is not well tested. Its tests haven't been updated for over 9 months, even with new features being released. It will be a hard task to discuss certain topics in this report due to the absence of updates regarding the subject.
 
 ### Controllability
 
@@ -46,7 +46,7 @@ Well the observability is one of the key factors of acessing unit testing. We ca
 
 As said before DuckieTV uses [Karma](http://karma-runner.github.io/0.13/index.html) and [Protractor](https://angular.github.io/protractor/#/) for unit testing and [Travis CI] (https://travis-ci.org/SchizoDuckie/DuckieTV) for integration tests.
 
-In this topic we will sadly be unable to discuss Karma and Protractor unit tests since we tried to run them but ended up either with an error message regarding some malformed tests or with zero tests ran.
+In this topic we will sadly be unable to discuss Karma and Protractor unit tests since we tried to run them, but ended up either with an error message regarding some malformed tests or with zero tests ran.
 
 Travis CI is used to make integration tests on pull requests made by the contributors. There are several jobs that are executed and each one must pass the tests in order to be considered a successfull build.
 
@@ -54,17 +54,17 @@ Travis CI is used to make integration tests on pull requests made by the contrib
 
 ### Isolateability
 
-Every project should have its components in a complete isolation, which means that for each feature it should exist one and only one component that takes care of it. That component should not depend on others in order to work. That way creating tests and validating the results would be more accurate.
+Every project should have its components in complete isolation, which means that for each feature there should exist one and only one component that takes care of it. That component should not depend on others in order to work. That way, creating tests and validating the results would be more accurate.
 
-DuckieTV is dependent of several third part libraries which makes it almost impossible to test the components in a complete isolation. Moreover DuckieTV module is needed for every component test as you can state in the following picture.
+DuckieTV is dependant on several third party libraries, which makes it almost impossible to test the components in complete isolation. Moreover, the DuckieTV module is needed for every component test, as you can state in the following picture.
 
 ![DuckieTV Module](http://i.imgur.com/Z6JROgm.png)
 
-The design of this software with a centralized module is not the best for unit tests that as the name suggests are tests for single units, not for units with external dependencies.
+The design of this software with a centralized module is not the best for unit tests which, as the name suggests, are tests for single units, and not for units with external dependencies.
 
 ### Understandability
 
-While creating tests for the components it is very important to know all of its features. However that is only possible if the author(s) of the component has documented it. In open-source projects that documentation is most important as there will be contributions from other persons that need to understand how it works.
+While creating tests for the components, it is very important to know all of its features. However, that is only possible if the author(s) of the component has documented it. In open-source projects, a clear documentation is of utmost importancy, since there will be contributions from other people, who must understand how the software works beforehand.
 
 Regarding documentation, DuckieTV is very well documented as well as organized following the JavaDocs documentation pattern.
 
