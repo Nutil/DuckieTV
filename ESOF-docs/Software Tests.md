@@ -78,6 +78,8 @@ Regarding documentation, DuckieTV is very well documented as well as organized f
 
 ![Documentation OpenHub DuckieTV](http://i.imgur.com/ApGV6oM.png)
 
+[SchizoDuckie](https://github.com/SchizoDuckie) created an [issue](https://github.com/SchizoDuckie/DuckieTV/issues/95) with an extensive set of diagrams to help new contributors to the project.
+
 Through out the code there are several elements, such as self-explaining variables and comments, that makes the understandability of this project a lot easier.
 
 ![Code Documentation](http://i.imgur.com/ZmP6bPl.png)
