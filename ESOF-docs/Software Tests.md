@@ -35,6 +35,8 @@ Last but not least there will be some statistics regarding the code coverage of 
 
 # Degree of Testability
 
+> More than the act of testing, the act of designing tests is one of the best bug preventers known. The thinking that must be done to create a useful test can discover and eliminate bugs before they are coded – indeed, test-design thinking can discover and eliminate bugs at every stage in the creation of software, from conception to specification, to design, coding and the rest. – Boris Beizer
+
 Unfortunately DuckieTV is not well tested. Its tests haven't been updated for more than 9 months even with new features being released. It will be a hard task to discuss certain topics regarding this main topic, but we will do our best.
 
 ## Controllability
