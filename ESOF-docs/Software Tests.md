@@ -48,7 +48,7 @@ As said before, DuckieTV has very few tests which allowed CUTs (components under
 ## Observability
 
 Why do we have tests if you can not see and analyze the results?
-Well the observability is one of the key factors of unit testing. We can only know what went wrong if you can see the test results.
+Well the observability is one of the key factors of unit testing. We can only know what went wrong if we can see the test results.
 
 As said before DuckieTV use [Karma](http://karma-runner.github.io/0.13/index.html) and [Protractor](https://angular.github.io/protractor/#/) for unit testing and [Travis CI] (https://travis-ci.org/SchizoDuckie/DuckieTV) for integration tests.
 
