@@ -82,6 +82,11 @@ This problem can be overcome with 2 metods: unit testing or integration testing.
 
 We can conclude that the use of a repository GitHub open to various contributors results in a heterogeneity of test tools used.
 
+
+### Test Coverage
+
+Because, as mentioned before, we were unable to run the tests, we do not have a means to tell exactly how much of DuckieTV is covered by the tests. However, our rough estimate lies between the 10% and 15% mark. This is an optimistic guess, it may very well even be lower than that, but never more than 15%. DuckieTV really lacks testing. In its current state, the vast majority of DuckieTV's functionalities are completely untested and any change to old code would require extended developer time to ensure proper functioning, because no tests would ensure the code works properly for the developer to save time.
+
 ## Critical Analysis
 
 Even though DuckieTV has some unit and integration tests, they have not been updated for a long time. This maybe even be one of the reasons why we couldn not even run the tests. Several features as well as new libraries were added without being tested, that may prove to become a problem in the future, when bugs start to be detected.
