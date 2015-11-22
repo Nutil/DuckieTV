@@ -70,29 +70,28 @@ Regarding documentation, DuckieTV is very well documented as well as organized f
 
 ![Documentation OpenHub DuckieTV](http://i.imgur.com/ApGV6oM.png)
 
-Through out the code there are several elements, such as self-explaining variables and comments, that makes the understandability of this project a lot easier.
+There are several elements throughout the code, such as self-explaining variables and comments, that make the understandability of this project a lot easier.
 
 ![Code Documentation](http://i.imgur.com/ZmP6bPl.png)
 
 ### Heterogeneity
 
-Despite of having a handfull of contributors it is necessary ensure that when merging pull request the programe remains fully functional.
+Despite having only a handfull of contributors, it is necessary ensure that when merging pull requests, the program remains fully functional.
 
-This problem can be overcome with 2 metods unit testing or through integration tests. DuckieTV uses Travis CI to automate this integration tests and ultimately ensure the correct function off the program with the new changes.
+This problem can be overcome with 2 metods: unit testing or integration testing. DuckieTV uses Travis CI to automate this by clearing integration tests, ultimately ensuring the correct functionality of the program after applying the new changes.
 
-We can concluded that the use of a repository GitHub open to various contributors result in a heterogeneity of test tools used.
+We can conclude that the use of a repository GitHub open to various contributors results in a heterogeneity of test tools used.
 
 ## Critical Analysis
 
-Even though DuckieTV has some unit and integration tests, they are not updated for a long time maybe one of the reasons why we can not even run the tests. Several features were released without being tested as well as new libraries added that may be a problem when bugs start to be detected.
+Even though DuckieTV has some unit and integration tests, they have not been updated for a long time. This maybe even be one of the reasons why we couldn not even run the tests. Several features as well as new libraries were added without being tested, that may prove to become a problem in the future, when bugs start to be detected.
 
-The fact that every component depends on DuckieTV module will make the creation of new tests more difficult.
+The fact that every component depends on the DuckieTV module will make the creation of new tests more difficult. This dependancy may be the reason why the developers have not dedicated their time to developing more tests.
 
-Of course that its not everything bad at all. This project is very well documented, several diagrams were created so that new contributors could understand the logic behind the chosen organization.
+Of course, not everything is bad. This project is very well documented, several diagrams were created so that new contributors could understand the logic behind the chosen organization, to compensate for the lack of tests present.
+There are inline comments and the variables naming is self-explanatory, which helps the most when analysing a function.
 
-There are inline comments and the variables naming is self-explanatory which helps the most when analysing a function.
-
-Summing up, DuckieTV **must** create unit tests for the existing features and the future ones, and keeping up with the good documentation techniques.
+Summing up, DuckieTV **must** create unit tests for the existing features and the future ones, as well as keep up with the good documentation techniques.
 
 ### Authors
 * João Silva ([up201305892@fe.up.pt](mailto:up201305892@fe.up.pt))
