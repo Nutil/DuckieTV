@@ -10,6 +10,10 @@
 3. [Bug Report] (#bug-report)
 
 1) Degree of Testability of the software program
+Topics: Discuss how 'testable' is the program. Discuss how to improve the testability of software components.
+
+The testability of software components (modules, classes) is determined by factors such as:
+- Separation of concerns: The degree to which the component under test has a single, well defined responsibility.
 - Heterogeneity: The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 
 2) Test Statistics
@@ -17,9 +21,11 @@
      % coverage (given by tools like EclEmma)
      Code coverage: is it any good? (see http://avandeursen.com/2013/11/19/test-coverage-not-for-managers/)
 
-## Introduction
+3) [Opcional] Take a bug report, create test cases to reproduce it, and fix it, eventually using automated software fault diagnosis techniques. (grade >18)
 
-With this report we have the goal of analyzing the software tests developed for [DuckieTV](https://schizoduckie.github.io/DuckieTV/) through the Validation and Verification ([V&V](https://en.wikipedia.org/wiki/Verification_and_validation) ).
+# Introduction
+
+With this report we have the goal of analyzing the software tests developed for [DuckieTV](https://schizoduckie.github.io/DuckieTV/) through the Validation and Verification ([V&V](https://en.wikipedia.org/wiki/Verification_and_validation)).
 
 In order to accomplish our goal we will explore how testable is the software, the controllability of the test components, the observability of them and the isolateability of each tested component. 
 
@@ -27,11 +33,11 @@ We will also discuss how each component is contained for a single and well defin
 
 Last but not least there will be some statistics regarding the code coverage of the tests and a critical analyzis to it.
 
-## Degree of Testability
+# Degree of Testability
 
 Unfortunately DuckieTV is not well tested. Its tests haven't been updated for more than 9 months even with new features being released. It will be a hard task to discuss certain topics regarding this main topic, but we will do our best.
 
-### Controllability
+## Controllability
 
 DuckieTV has two types of tests Karma and Protractor unit tests and Travis IC integration tests. Being a software with a lot of dependencies it has not only the need to control the state of the components being tested but also the third part software that is being used by them.
 
@@ -39,10 +45,10 @@ As said before, DuckieTV has very few tests which allowed CUTs (components under
 
 ![HTTP Backend Override](http://i.imgur.com/277gDP3.png)
 
-### Observability
+## Observability
 
 Why do we have tests if you can not see and analyze the results?
-Well the observability is one of the key factors of unit testing. We can only know what went wrong if we can see the test results.
+Well the observability is one of the key factors of unit testing. We can only know what went wrong if you can see the test results.
 
 As said before DuckieTV use [Karma](http://karma-runner.github.io/0.13/index.html) and [Protractor](https://angular.github.io/protractor/#/) for unit testing and [Travis CI] (https://travis-ci.org/SchizoDuckie/DuckieTV) for integration tests.
 
@@ -61,6 +67,10 @@ DuckieTV is dependent of several third part libraries which makes it almost impo
 ![DuckieTV Module](http://i.imgur.com/Z6JROgm.png)
 
 The design of this software with a centralized module is not the best for unit tests that as the name suggests are tests for single units, not for units with external dependencies.
+
+###Separation of Concerns
+
+When developing software, it is important to ensure that every implemented functionality is confined to the component that regard it, otherwise the result code become a lot more confusing and therefore less testable. A medium/large scale project, like DuckieTV should be given particular attention to this aspect in order to prevent the occurrence of unstructured code, which makes it difficult in the medium and long -term maintenance.
 
 ### Understandability
 
@@ -81,24 +91,3 @@ Despite of having a handfull of contributors it is necessary ensure that when me
 This problem can be overcome with 2 metods unit testing or through integration tests. DuckieTV uses Travis CI to automate this integration tests and ultimately ensure the correct function off the program with the new changes.
 
 We can concluded that the use of a repository GitHub open to various contributors result in a heterogeneity of test tools used.
-
-## Critical Analysis
-
-Even though DuckieTV has some unit and integration tests, they are not updated for a long time maybe one of the reasons why we can not even run the tests. Several features were released without being tested as well as new libraries added that may be a problem when bugs start to be detected.
-
-The fact that every component depends on DuckieTV module will make the creation of new tests more difficult.
-
-Of course that its not everything bad at all. This project is very well documented, several diagrams were created so that new contributors could understand the logic behind the chosen organization.
-
-There are inline comments and the variables naming is self-explanatory which helps the most when analysing a function.
-
-Summing up, DuckieTV **must** create unit tests for the existing features and the future ones, and keeping up with the good documentation techniques.
-
-### Authors
-* João Silva ([up201305892@fe.up.pt](mailto:up201305892@fe.up.pt))
-* Luís Figueiredo ([up201304295@fe.up.pt](mailto:up201304295@fe.up.pt))
-* Pedro Teles ([up201305101@fe.up.pt](mailto:up201305101@fe.up.pt))
-* Tiago Figueiredo ([ei12069@fe.up.pt](mailto:ei12069@fe.up.pt))
-
-**Faculdade de Engenharia da Universidade do Porto - MIEIC**
-**2015-10-16**
