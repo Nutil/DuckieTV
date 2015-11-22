@@ -6,7 +6,7 @@
      4. [Separation of Concerns] (#separation-of-concerns)
      5. [Understandability] (#understandability)
      6. [Heterogeneity] (#heterogeneity)
-2. [Test Statistics] (#statistics)
+2. [Test Coverage] (#Test Coverage)
 3. [Bug Report] (#bug-report)
 
 1) Degree of Testability of the software program
