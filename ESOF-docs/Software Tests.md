@@ -37,8 +37,12 @@ We will also discuss how each component is contained for a single and well defin
 Last but not least there will be some statistics regarding the code coverage of the tests and a critical analyzis to it.
 
 # Degree of Testability
+
 Unfortunately DuckieTV is not well tested. Its tests haven't been updated for more than 9 months even with new features being released. It will be a hard task to discuss certain topics regarding this main topic, but we will do our best.
 
 ## Controllability
-- Controllability: The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
-DuckieTV has two types of tests Karma and Protractor unit tests. Being developed in several modules it became easier to control the state of each component.
+
+DuckieTV has two types of tests Karma and Protractor unit tests. Being a software with a lot of dependencies it has not only the need to control the state of the components being tested but also the third part software that is being used by them.
+As said before, DuckieTV has very few tests which allowed CUTs (components under test) to be controlled easier. One of the methods to deal with the HTTP responses was by overriding the respond function as seen on the image below.
+
+[!HTTP Backend Override](http://i.imgur.com/277gDP3.png)
