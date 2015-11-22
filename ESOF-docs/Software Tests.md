@@ -48,9 +48,10 @@ As said before, DuckieTV has very few tests which allowed CUTs (components under
 
 ## Observability
 - Observability: The degree to which it is possible to observe (intermediate and final) test results.
+
 This topic will be very hard to discuss since the existing unit tests do not run. We have no chance to test either there was a possible observation
 
 ### Isolateability
-- Isolateability: The degree to which the component under test (CUT) can be tested in isolation.
+
 Almost every component in this software is dependant on third part libraries which makes almost impossible to test them in a complete isolation. Moreover DuckieTV module is needed for every component test as you can state in the following picture.
 ![DuckieTV Module](http://i.imgur.com/Z6JROgm.png)
