@@ -14,7 +14,6 @@ Topics: Discuss how 'testable' is the program. Discuss how to improve the testab
 
 The testability of software components (modules, classes) is determined by factors such as:
 - Separation of concerns: The degree to which the component under test has a single, well defined responsibility.
-- Understandability: The degree to which the component under test is documented or self-explaining.
 - Heterogeneity: The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 
 2) Test Statistics
@@ -47,11 +46,36 @@ As said before, DuckieTV has very few tests which allowed CUTs (components under
 ![HTTP Backend Override](http://i.imgur.com/277gDP3.png)
 
 ## Observability
-- Observability: The degree to which it is possible to observe (intermediate and final) test results.
 
-This topic will be very hard to discuss since the existing unit tests do not run. We have no chance to test either there was a possible observation
+Why do we have tests if you can not see and analyze the results?
+Well the observability is one of the key factors of unit testing. We can only know what went wrong if you can see the test results.
+
+As said before DuckieTV use [Karma](http://karma-runner.github.io/0.13/index.html) and [Protractor](https://angular.github.io/protractor/#/) for unit testing and [Travis CI] (https://travis-ci.org/SchizoDuckie/DuckieTV) for integration tests.
+
+In this topic we will sadly be unable to discuss Karma and Protractor unit tests since we tried to run them but ended up either with an error message regarding some malformed tests or with zero tests ran.
+
+Travis CI is used to make integration tests on pull requests made by the contributors. There are several jobs that are executed and each one must pass the tests in order to be considered a successfull build.
+
+![Travis IC Build](http://i.imgur.com/IuPMFS3.png)
 
 ### Isolateability
 
-Almost every component in this software is dependant on third part libraries which makes almost impossible to test them in a complete isolation. Moreover DuckieTV module is needed for every component test as you can state in the following picture.
+Every project should have its components in a complete isolation, which means that for each feature it should exist one and only one component that takes care of it. That component should not depend on others in order to work. That way creating tests and validating the results would be more accurate.
+
+DuckieTV is dependent of several third part libraries which makes it almost impossible to test the components in a complete isolation. Moreover DuckieTV module is needed for every component test as you can state in the following picture.
+
 ![DuckieTV Module](http://i.imgur.com/Z6JROgm.png)
+
+The design of this software with a centralized module is not the best for unit tests that as the name suggests are tests for single units, not for units with external dependencies.
+
+### Understandability
+
+While creating tests for the components it is very important to know all of its features. However that is only possible if the author(s) of the component has documented it. In open-source projects that documentation is most important as there will be contributions from other persons that need to understand how it works.
+
+Regarding documentation, DuckieTV is very well documented as well as organized following the JavaDocs documentation pattern.
+
+![Documentation OpenHub DuckieTV](http://i.imgur.com/ApGV6oM.png)
+
+Through out the code there are several elements, such as self-explaining variables and comments, that makes the understandability of this project a lot easier.
+
+![Code Documentation](http://i.imgur.com/ZmP6bPl.png)
