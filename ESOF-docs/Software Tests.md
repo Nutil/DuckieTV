@@ -35,8 +35,6 @@ Last but not least there will be some statistics regarding the code coverage of 
 
 # Degree of Testability
 
-> More than the act of testing, the act of designing tests is one of the best bug preventers known. The thinking that must be done to create a useful test can discover and eliminate bugs before they are coded – indeed, test-design thinking can discover and eliminate bugs at every stage in the creation of software, from conception to specification, to design, coding and the rest. – Boris Beizer
-
 Unfortunately DuckieTV is not well tested. Its tests haven't been updated for more than 9 months even with new features being released. It will be a hard task to discuss certain topics regarding this main topic, but we will do our best.
 
 ## Controllability
@@ -78,8 +76,12 @@ Regarding documentation, DuckieTV is very well documented as well as organized f
 
 ![Documentation OpenHub DuckieTV](http://i.imgur.com/ApGV6oM.png)
 
-[SchizoDuckie](https://github.com/SchizoDuckie) created an [issue](https://github.com/SchizoDuckie/DuckieTV/issues/95) with an extensive set of diagrams to help new contributors to the project.
-
 Through out the code there are several elements, such as self-explaining variables and comments, that makes the understandability of this project a lot easier.
 
 ![Code Documentation](http://i.imgur.com/ZmP6bPl.png)
+
+### Heterogeneity
+
+Despite of having a handfull of contributors it is necessary ensure that when merging pull request the programe remains fully functional.
+This problem can be overcome with 2 metods unit testing or through integration tests. DuckieTV uses Travis CI to automate this integration tests and ultimately ensure the correct function off the program with the new changes.
+We can concluded that the use of a repository GitHub open to various contributors result in a heterogeneity of test tools used.
