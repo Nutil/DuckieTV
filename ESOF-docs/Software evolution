@@ -5,5 +5,9 @@
 3. [Critical analysis] (#critical-analysis)
 
 
-## Introduction
+## Feature
+
+The project repository has a comprehensive list of issues that is fueled by its users and developers. After careful 
+consideration of it, the group decided to develop a feature that shows some statistic such as time spending wathing series,
+completed series total of series being followed. Based on the issue [#596](https://github.com/SchizoDuckie/DuckieTV/issues/596).
 
