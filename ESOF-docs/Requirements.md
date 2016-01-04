@@ -98,7 +98,7 @@ Because there is no server side data storage, the user's privacy is kept intact.
 > Everything runs locally. If you decide to execute a torrent search for an episode, a request goes from your computer to the search engine.
 
 #### Use Case Diagram
-![Use Case](http://i.imgur.com/s6eBXHM.png)
+![Use Case](http://i.imgur.com/bVjXJEq.png)
 
 ## Design Constraints
 DuckieTV was developed in order to fit different screen dimensions. While it can technically run on a (high-end) Android phone, however, the use of a Tablet is advised when you want to run it on the Android platform because there are no small-screen optimisations.
