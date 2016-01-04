@@ -34,7 +34,7 @@ The Logical view shows the key abstractions in the system, such as objects, obje
 #### UML Package Diagram
 Packages are a grouping mechanism in UML that can group several elements of any type and even other packages. This diagram focuses on the dependencies between all the packages of the software.
 
-![Package Diagram](http://i.imgur.com/sm1QUgb.png)
+![Package Diagram](http://i.imgur.com/6NAdECr.png)
 
 ### Implementation view
 The Implementation view has the goal of showing software components and the dependencies among them.
